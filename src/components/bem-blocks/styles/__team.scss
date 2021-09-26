@@ -1,0 +1,14 @@
+.team {
+    background: #fff;
+    &--content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-top: 90px;
+    }
+    &__item {
+        & img {
+            width: 100%;
+        }
+    }
+}

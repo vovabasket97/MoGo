@@ -1,0 +1,108 @@
+.hero {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+  & .owl-carousel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  & .owl-item {
+    & img {
+      height: 100vh;
+    }
+  }
+  &__main .row {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    & hr {
+      height: 3px;
+      background: #fff;
+      width: 60px;
+      margin: 73px auto 50px;
+    }
+  }
+  & .hero__main {
+    & h3 {
+      font-size: 4.5rem;
+      font-family: "Kaushan Script", cursive;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    }
+    & h1 {
+      font-size: 9.375rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 0.933;
+      color: #fff;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    }
+  }
+  & .hero__nav__item {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 25px;
+    align-items: baseline;
+    cursor: pointer;
+    & * {
+      pointer-events: none;
+    }
+    &.active {
+      & .hero__nav__item--status::after {
+        transform: translateX(0);
+      }
+    }
+    &--status {
+      position: relative;
+      width: 100%;
+      background: #fff;
+      height: 3px;
+      overflow: hidden;
+      &:after {
+        content: "";
+        background: #f38181;
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(-150%);
+        transition: all 0.3s;
+      }
+    }
+    &--index {
+      font-size: 24px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: left;
+      margin-right: 0.625rem;
+    }
+    &--title {
+      font-size: 16px;
+      color: rgb(255, 255, 255);
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: left;
+    }
+  }
+}
