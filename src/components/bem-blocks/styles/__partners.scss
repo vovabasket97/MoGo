@@ -1,7 +1,10 @@
 .partners {
-    padding: 60px 0;
+    padding: 60px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #f8f8f8;
+    & img {
+        width: 100%;
+    }
 }

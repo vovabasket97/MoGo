@@ -6,6 +6,9 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     margin-top: 90px;
+    & img {
+      width: 100%;
+    }
   }
   .accordion {
     row-gap: 10px;
