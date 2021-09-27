@@ -30,8 +30,8 @@
   }
   .hero {
     padding: 30px 0 15px;
-    & .hero__nav__item {
-      row-gap: 10px;
+    & .hero__nav__item--status {
+      margin-bottom: 10px;
     }
     & .hero__main {
       & h1 {
@@ -64,6 +64,13 @@
   nav a:not(:last-child) {
     margin-right: 25px;
   }
+  .hero .hero__nav__item--index {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .hero .hero__nav__item--title {
+    font-size: 14px;
+  }
 }
 
 //!MEDIA: 1199
@@ -89,12 +96,8 @@
   nav a:not(:last-child) {
     margin-right: 10px;
   }
-  .hero .hero__nav__item {
-    column-gap: 5px;
-    column-gap: 5px;
-  }
   .hero .hero__nav__item--index {
-    margin-right: 0px;
+    margin-right: 10px;
     font-size: 18px;
   }
   .hero .hero__nav__item--title {
@@ -120,7 +123,6 @@
   .team--content {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 30px;
     justify-content: center;
   }
   .post {
@@ -135,7 +137,6 @@
     top: 0;
     flex-direction: column;
     right: 0;
-    row-gap: 15px;
     height: 100vh;
     justify-content: flex-start;
     background: #212529;
@@ -144,8 +145,13 @@
     min-width: 45vw;
     transform: translateX(105%);
     transition: transform 0.3s;
-    & a:after {
-      top: calc(100% + 3px);
+    & a {
+      &:after {
+        top: calc(100% + 3px);
+      }
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
   }
   .header nav.active {
@@ -199,7 +205,9 @@
 @media screen and (max-width: 369px) {
   .hero__nav .row {
     flex-direction: column;
-    row-gap: 20px;
+    & > a:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
   .hero .hero__nav__item {
     width: 100%;

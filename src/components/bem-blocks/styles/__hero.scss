@@ -64,7 +64,6 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
-    row-gap: 25px;
     align-items: baseline;
     cursor: pointer;
     & * {
@@ -81,6 +80,7 @@
       background: #fff;
       height: 3px;
       overflow: hidden;
+      margin-bottom: 15px;
       &:after {
         content: "";
         background: #f38181;
@@ -100,7 +100,7 @@
       text-transform: uppercase;
       line-height: 1.2;
       text-align: left;
-      margin-right: 0.625rem;
+      margin-right: 20px;
     }
     &--title {
       font-size: 16px;

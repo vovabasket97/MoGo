@@ -95,9 +95,11 @@ nav {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  row-gap: 25px;
   margin-bottom: 95px;
   position: relative;
+  & > *:not(:last-child) {
+    margin-bottom: 25px;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -126,6 +128,7 @@ nav {
   display: flex;
   flex-direction: column;
   max-width: 360px;
+  margin-bottom: 30px;
   &__thumbnail {
     position: relative;
     margin-bottom: 20px;
@@ -166,9 +169,11 @@ nav {
   &__details {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
     padding-bottom: 22px;
     border-bottom: 1px solid #ece8ef;
+    & > *:not(:last-child) {
+      margin-bottom: 25px;
+    }
     &__title {
       font-size: 14px;
       color: rgb(51, 51, 51);
@@ -193,7 +198,9 @@ nav {
   &__amount {
     margin-top: 20px;
     display: flex;
-    column-gap: 20px;
+    & > div:not(:last-child) {
+      margin-right: 20px;
+    }
     & svg {
       margin-right: 4px;
       & * {
