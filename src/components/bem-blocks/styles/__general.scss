@@ -50,6 +50,7 @@ nav {
   justify-content: space-between;
   & li:not(:last-child) {
     margin-right: 55px;
+    margin-bottom: 10px;
   }
   & li.active > a {
     color: rgb(252, 227, 138);

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     document.querySelector('.nav-close').addEventListener('click', (e) => {
-        e.target.parentNode.classList.remove('active');
+        e.target.parentNode.parentNode.classList.remove('active');
     })
     document.querySelector('.nav-open').addEventListener('click', (e) => {
         console.log(e.target);
