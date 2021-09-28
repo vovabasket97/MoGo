@@ -48,6 +48,15 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  & li:not(:last-child) {
+    margin-right: 55px;
+  }
+  & li.active > a {
+    color: rgb(252, 227, 138);
+    &:after {
+      background: rgb(252, 227, 138);
+    }
+  }
   & a {
     font-size: 14px;
     color: rgb(255, 255, 255);
@@ -64,15 +73,6 @@ nav {
       left: 0;
       pointer-events: none;
       transition: all 0.3s;
-    }
-    &:not(:last-child) {
-      margin-right: 55px;
-    }
-    &.active {
-      color: rgb(252, 227, 138);
-      &:after {
-        background: rgb(252, 227, 138);
-      }
     }
     &:hover {
       &:after {

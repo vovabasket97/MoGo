@@ -1,4 +1,7 @@
 .header {
+    & li {
+        list-style: none;
+    }
     & .header__logo img {
         cursor: pointer;
     }

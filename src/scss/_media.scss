@@ -61,7 +61,7 @@
 
 //MEDIA: 1199
 @media screen and (max-width: 1199px) {
-  nav a:not(:last-child) {
+  nav li:not(:last-child) {
     margin-right: 25px;
   }
   .hero .hero__nav__item--index {
@@ -93,7 +93,7 @@
 
 //MEDIA: 767
 @media screen and (max-width: 767px) {
-  nav a:not(:last-child) {
+  nav li:not(:last-child) {
     margin-right: 10px;
   }
   .hero .hero__nav__item--index {
